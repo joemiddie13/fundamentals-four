@@ -18,6 +18,16 @@
 
 // Accessing Array Elements
 
-const cars = ["Rivian", "Jeep", "Ford"];
-let car = cars[0];
-console.log(car);
+// const cars = ["Rivian", "Jeep", "Ford"];
+// let car = cars[1];
+// console.log(car);
+
+// Changing an Array element
+
+// const cars = ["Rivian", "Jeep", "Ford"];
+// cars[2] = "Toyota";
+// console.log(cars);
+// prompt("What type of car do you like?");
+// window.alert(cars);
+
+//
