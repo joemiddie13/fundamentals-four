@@ -12,6 +12,9 @@
     <p id="demo"></p>
     
     <script>
+
+        // For Loops with Arrays
+
         // const cars = ["Rivian", " Jeep", " Ford"];
         // // document.getElementById("demo").innerHTML = cars;
         // // let length = cars.length;
@@ -28,17 +31,50 @@
         //     text += "</ul>";
         // document.getElementById("demo").innerHTML = text;
 
+        // const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        // let carList = cars.length;
+
+        // let text = "<ul>";
+        // for (let i = 0; i < carList; i++) {
+        //     text += "<li>" + cars[i] + "</li>";
+        // }
+        // text += "</ul>";
+
+        // document.getElementById("demo").innerHTML = text;
+
+        // Adding Array Elements
+
+        // const cars = ["Rivian", " Jeep", " Ford"];
+        // cars.push("Toyota");
+        // console.log(cars);
+
+        // The difference between Arrays and Objects
+        // In JavaScript, arrays use numbered indexes
+        // In JavaScript, objects use named indexes
+
+        // Converting Arrays to Strings
+
+        // const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        // document.getElementById("demo").innerHTML = fruits.toString();
+
+        // JavaScript Array push()
+
+        // const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        // cars.push("Volvo");
+        // console.log(cars);
+
+        // Array shift()
+
+        // const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        // cars.shift();
+        // console.log(cars);
+
         const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
-        let carList = cars.length;
+        let car = cars.shift();
+        console.log(car);
 
-        let text = "<ul>";
-        for (let i = 0; i < carList; i++) {
-            text += "<li>" + cars[i] + "</li>";
-        }
-        text += "</ul>";
 
-        document.getElementById("demo").innerHTML = text;
-    
+            
 
     </script>
     
