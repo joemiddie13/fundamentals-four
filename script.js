@@ -20,3 +20,4 @@
 
 const cars = ["Rivian", "Jeep", "Ford"];
 let car = cars[0];
+console.log(car);
