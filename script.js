@@ -30,4 +30,15 @@
 // prompt("What type of car do you like?");
 // window.alert(cars);
 
-//
+// Access the Full Array
+
+// const cars = ["Rivian", "Jeep", "Ford"];
+// document.getElementById("demo").innerHTML = cars;
+
+// Arrays are Objects
+
+// const person = ["Joe", "Paul", 36];
+// firstName = [0];
+// console.log(person.firstName);
+
+// const person = [firstName:"Joe", lastName:"Paul", age:36];
