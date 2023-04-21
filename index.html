@@ -107,16 +107,21 @@
         // const newArr = myArr.flat();
         // console.log(newArr);
 
-        //Array splice() and slice()
+        //Array splice()
 
-        const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
-        cars.splice(2, 0, "California", "Washington");
-        console.log(cars);
+        // const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        // cars.splice(2, 0, "California", "Washington");
+        // console.log(cars);
         // [Rivian, Jeep, California, Washington, Ford, Toyota]
         // Parameter (2) defines the position where new elements
         // should be added (spliced in)
         // 2nd parameter (0) defines how many elements should be removed
         
+        // Array slice()
+        
+        const cars = ["Rivian", "Jeep", "Ford", "Toyota"];
+        const trucks = cars.slice(1);
+        console.log(trucks);
 
     </script>
     
