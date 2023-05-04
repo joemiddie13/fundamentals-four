@@ -42,14 +42,19 @@
 // console.log(person.firstName);
 
 // const person = [firstName:"Joe", lastName:"Paul", age:36];
-function toUpper(string) {
-    return string.toUpperCase();
-  }
+// function toUpper(string) {
+//     return string.toUpperCase();
+//   }
   
-  const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+//   const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
   
-  const upperCats = cats.map(toUpper);
+//   const upperCats = cats.map(toUpper);
   
-  console.log(upperCats);
+//   console.log(upperCats);
   // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
-  
+
+  const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+  for (const cat of cats) {
+    console.log(cat);
+  }
