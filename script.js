@@ -53,8 +53,64 @@
 //   console.log(upperCats);
   // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
 
-  const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+  // const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
 
-  for (const cat of cats) {
-    console.log(cat);
+  // for (const cat of cats) {
+  //   console.log(cat);
+  // }
+
+//   const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+// for (let i = 0; i < cats.length; i++) {
+//   console.log(cats[i]);
+// }
+
+
+// const cats = ['Pete', 'Biggles', 'Jasmine'];
+
+// let myFavoriteCats = 'My cats are called ';
+
+// for (const cat of cats) {
+//   myFavoriteCats += `${cat}, `
+// }
+
+// console.log(myFavoriteCats); // "My cats are called Pete, Biggles, Jasmine, "
+
+// const cats = ['Pete', 'Biggles', 'Jasmine'];
+
+// let myFavoriteCats = 'My cats are called ';
+
+// for (let i = 0; i < cats.length; i++) {
+//   if (i === cats.length - 1) {   // We are at the end of the array
+//     myFavoriteCats += `and ${cats[i]}.`
+//   } else {
+//     myFavoriteCats += `${cats[i]}, `
+//   }
+// }
+
+// console.log(myFavoriteCats);     // "My cats are called Pete, Biggles, and Jasmine."
+
+
+// EXITING LOOPS WITH BREAK
+
+const contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
+const para = document.querySelector('p');
+const input = document.querySelector('input');
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () => {
+  const searchName = input.value.toLowerCase();
+  input.value = '';
+  input.focus();
+  para.textContent = '';
+  for (const contact of contacts) {
+    const splitContact = contact.split(':');
+    if (splitContact[0].toLowerCase() === searchName) {
+      para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+      break;
+    }
   }
+  if (para.textContent === '') {
+   para.textContent = 'Contact not found.';
+ }
+});
