@@ -93,24 +93,43 @@
 
 // EXITING LOOPS WITH BREAK
 
-const contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
-const para = document.querySelector('p');
-const input = document.querySelector('input');
-const btn = document.querySelector('button');
+// const contacts = ['Chris:2232322', 'Sarah:3453456', 'Bill:7654322', 'Mary:9998769', 'Dianne:9384975'];
+// const para = document.querySelector('p');
+// const input = document.querySelector('input');
+// const btn = document.querySelector('button');
 
-btn.addEventListener('click', () => {
-  const searchName = input.value.toLowerCase();
-  input.value = '';
-  input.focus();
-  para.textContent = '';
-  for (const contact of contacts) {
-    const splitContact = contact.split(':');
-    if (splitContact[0].toLowerCase() === searchName) {
-      para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
-      break;
-    }
-  }
-  if (para.textContent === '') {
-   para.textContent = 'Contact not found.';
- }
-});
+// btn.addEventListener('click', () => {
+//   const searchName = input.value.toLowerCase();
+//   input.value = '';
+//   input.focus();
+//   para.textContent = '';
+//   for (const contact of contacts) {
+//     const splitContact = contact.split(':');
+//     if (splitContact[0].toLowerCase() === searchName) {
+//       para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+//       break;
+//     }
+//   }
+//   if (para.textContent === '') {
+//    para.textContent = 'Contact not found.';
+//  }
+// });
+
+// The Standard "for... loop"
+
+// for (initializer; condition; final-expression) {
+//   // code to run
+// }
+
+// 1. An initializer - usually a variable set to a number. Incremented to count
+// the number of times the loop has run. Also called the "counter variable"
+
+// 2. Condition - defines when the loop should stop looping
+// Generally an expression featuring a comparison operator
+// or a test to see if the exit condition has been met
+
+// 3. Final-expression - evaluated or run each time the loop has gone through
+// a ful iteration. Usually serves to increment (sometimes decrement) the counter variable
+// to bring everything closer to the point where the condition is no longer true
+
+
