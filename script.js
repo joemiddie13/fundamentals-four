@@ -132,4 +132,47 @@
 // a ful iteration. Usually serves to increment (sometimes decrement) the counter variable
 // to bring everything closer to the point where the condition is no longer true
 
+// const para = document.querySelector('p');
+// const input = document.querySelector('input');
+// const btn = document.querySelector('button');
 
+// btn.addEventListener('click', () => {
+//   para.textContent = 'Output: ';
+//   const num = input.value;
+//   input.value = '';
+//   input.focus();
+//   for (let i = 1; i <= num; i++) {
+//     let sqRoot = Math.sqrt(i);
+//     if (Math.floor(sqRoot) !== sqRoot) {
+//       continue;
+//     }
+//     para.textContent += `${i} `;
+//   }
+// });
+
+// while and do... while
+
+// initializer
+// while (condition) {
+//   // code to run
+
+//   final-expression
+// }
+
+const cats = ['Pete', 'Biggles', 'Jasmine'];
+
+let myFavoriteCats = 'My cats are called ';
+
+let i = 0;
+
+while (i < cats.length) {
+  if (i === cats.length - 1) {
+    myFavoriteCats += `and ${cats[i]}.`;
+  } else {
+    myFavoriteCats += `${cats[i]}, `;
+  }
+
+  i++;
+}
+
+console.log(myFavoriteCats);     // "My cats are called Pete, Biggles, and Jasmine."
